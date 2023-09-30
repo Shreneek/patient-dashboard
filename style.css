@@ -1,0 +1,232 @@
+body {
+    background-color: #edf2f6;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #0a586c;
+    color: #fff;
+    width: 6%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-around;
+    }
+}
+
+.sidebar i {
+    font-size: 24px;
+}
+
+/* Main content styling */
+.content {
+    margin: 0px 0px 0px 120px;
+    /* Width of the sidebar */
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+        margin: 0px;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+.card-body img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #f0f0f0d6;
+
+}
+
+.name {
+    font-size: small;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+.age {
+    font-size: small;
+    color: #657479;
+    font-weight: 500;
+}
+
+.update-btn {
+    background: #44bc8e;
+    font-size: small;
+    width: 84px;
+    border: none;
+    font-weight: 500;
+}
+
+.record1 {
+    display: inline-flex;
+    height: min-content;
+    column-gap: 2%;
+    flex-wrap: nowrap;
+
+    @media (max-width: 768px) {
+        display: block !important;
+    }
+}
+
+.about {
+    text-align: start;
+    width: 300px;
+    font-size: small;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.general {
+    color: grey;
+}
+
+.data {
+    color: black;
+    width: 80px !important;
+    display: inline-block
+}
+
+
+.add-prescription {
+    text-align: center;
+    border: 2px;
+    color: #6fc3a2;
+    padding: 20px;
+    border-style: dashed;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.prescription-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #dfdfdf;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+}
+
+.prescription-item button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Add more styling for your cards, buttons, and other elements as needed */
+
+.profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        align-items: baseline;
+    }
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.records {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.reports {
+    align-items: center;
+}
+
+i {
+    width: 20px;
+    height: auto;
+    padding: 20px 20px 20px 0px;
+    margin: 0px;
+}
+
+.card-columns {
+    @media (max-width: 768px) {
+        column-count: 1;
+    }
+}
+
+.row {
+    margin: 0px
+}
+
+.title {
+    margin: 20px 20px 10px 150px;
+
+    @media (max-width: 768px) {
+        margin: 10px
+    }
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bio {
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        column-gap: 1em;
+    }
+}
+
+.counts {
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.table-title {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.user {
+    @media (max-width: 768px) {
+        font-size: 9px;
+    }
+}
